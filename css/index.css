@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* START */
+body {
+	background-color: rgb(219, 216, 216);
+}
+.cover {
+	height: fit-content;
+	width: 90%;
+    background-color:white;
+    margin: 10px auto;
+}
+
+
+/* HEADER */
+header {
+	box-sizing: border-box;
+	padding: 1em 0;
+	border-bottom: 1px solid grey;
+}
+/* HEADER - logo*/
+.logo {
+	font-size: 2em;
+    font-family: 'Pacifico', cursive;
+    cursor: pointer;
+	padding-left: 1em;
+	margin-top: -.35em;
+}
+
+/* HEADER - navbar */
+.navbar {
+	display: flex;
+    justify-content: space-between;
+	padding-right: 1em;
+}
+
+.nav-parent {
+	box-sizing: border-box;
+	display: flex;
+	width: 45%;
+	justify-content: space-evenly;
+	align-self: center;
+	align-items: center;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+.nav-items {
+	padding: 4px 0;
+	/* background-color: aquamarine; */
+	text-align: center;
+	width: 37%;
+}
+
+.nav-items:nth-child(2) {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.nav-items a{
+	text-decoration: none;
+	color: black;
+}
+
+.nav-parent li:hover {
+	background-color: orange;
+}
+
+
+/* CONTENT */
+/* CONTENT - home */
+.home {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 25px 0 18px 0;
+}
+
+.home h1 {
+	font-family: 'Roboto', sans-serif;
+	align-self: center;
+	width:500px;
+	font-weight: bold;
+	font-size: 2em;
+	padding-bottom:18px;
+}
+
+.home p {
+	opacity: .7;
+	font-size: 1.1em;
+}
+
+/* CONTENT - first mainpage */
+main {
+	border-bottom: 1px solid rgba(128, 128, 128, 0.422);
+}
+
+.first-mainpage {
+	box-sizing: border-box;
+	display: flex;
+	justify-content:space-around;
+}
+
+.banner  {
+	display: flex;
+	justify-content: center;
+	/* background-color: red; */
+}
+
+.banner {
+	margin: 0 1em 0 2em;
+	width: 60%;
+	display: flex;
+	align-self: start;
+	flex-direction: column;
+}
+
+
+/* CONTENT - first mainpage - banner */
+.banner img {
+	width: 100%;
+}
+
+.banner figcaption {
+	/* text-align: center; */
+	padding: 16px 0 20px 10%;
+	opacity: .8;
+	font-size: 1.1em;
+}
+
+/* CONTENT - first mainpage - contact review */
+.contact-review {
+	display: flex;
+}
+
+.contact-review .photo-contact-review {
+	display: flex;
+	width: 60px;
+	height: 60px;
+	margin: 1% 3% 2% 4%;
+	justify-content: center;
+	align-items: center;
+	border: 0px solid rgb(219, 216, 216);
+	background-color: rgb(219, 216, 216);
+	border-radius: 50%;
+}
+
+.contact-review .photo-contact-review span {
+	font-size: 35px;
+	opacity: .7;
+	padding: 5px;
+	color: rgba(39, 47, 58, 0.773);
+}
+
+.contact-review .data-contact-review {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	opacity: .9;
+	line-height: 1.2em;
+	padding-top: 2.5%;
+}
+.contact-review .data-contact-review h4 {
+	font-weight: 600;
+}
+
+.contact-review .data-contact-review p {
+	opacity: .8;
+}
+
+/* CONTENT - minipage - product benefit */
+.product-benefit {
+	margin-left: 5%;
+}
+.product-benefit h3 {
+	font-weight: 700;
+	line-height: 16px;
+	padding: 20px 0;
+}
+
+.product-benefits-point li {
+	display: flex;
+}
+
+.product-benefits-point li .circle-number {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(219, 216, 216);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	color: rgb(1, 1, 82);
+	opacity: .5;
+	padding: 13px 17px;
+	border: 1px solid rgb(219, 216, 216);
+	border-radius: 50%;
+	align-self: center;
+	margin-bottom: 10px;
+	
+}
+
+.product-benefits-point li p {
+	display: flex;
+	align-self: center;
+	margin-left: 10px;
+	margin-top: -10px;
+}
+
+.product-benefits-point li:nth-child(3) {
+	box-sizing: border-box;
+	padding-bottom: 30px;
+}
+
+/* CONTENT - first mainpage - form */
+.container {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 100%;
+	max-width: 100%;
+}
+
+.form {
+	padding: 30px 40px;	
+}
+
+.form h4 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 1.4em;
+	padding: 10px 0 20px 0;
+}
+
+.form p {
+	opacity: .8;
+	margin-bottom: 3em;
+}
+
+.form label {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+}
+
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form select {
+	width: 107%;
+	padding: 10px;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.form button {
+	background-color: black;
+	border-radius: 4px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	color: white;
+	display: block;
+	font-size: 16px;
+	padding: 10px;
+	margin: 20px auto;
+	width: 100%;
+    cursor: pointer;
+}
+
+.form button:hover {
+	background-color: white;
+	color: black;
+}
+
+/* CONTENT - our package */
+.second-mainpage {
+	border-bottom: 1px solid rgba(128, 128, 128, 0.422);
+}
+
+.our-package h1 {
+	box-sizing: border-box;
+	padding-top: 2.5em;
+	justify-content: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+	text-align: center;
+	background-color: rgb(237,240,244);
+	height: 200px;
+}
+
+/* CONTENT - our package - detail package */
+.top-package, .bottom-package {
+	box-sizing: border-box;
+	padding: 30px 10px;
+	display: flex;
+}
+
+.top-package .package , .bottom-package .package{	
+	display: flex;
+	box-sizing: border-box;
+	text-align: center;
+	width: 33.34%;
+}
+
+.top-package .logo , .bottom-package .logo{
+	display: flex;
+	align-items: center;
+	font-size: 2em;
+	margin-top: 10px;
+	margin-left: -10px;
+}
+
+.top-package .package .package-text, .bottom-package .package .package-text{
+	display: flex;
+	align-self: center;
+	flex-direction: column;
+	text-align: start;
+	padding-left: 15px;
+}
+
+.top-package .package .package-text h1, .bottom-package .package .package-text h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 1.3em;
+	padding: 8px 0;
+}
+
+
+/* CALL US */
+.callus {
+	text-align: center;
+}
+
+.callus h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 1.9em;
+	padding: 180px 0 25px 0;
+}
+
+.callus p {
+	margin: 0 auto;
+	text-align: center;
+	width: 550px;
+	opacity: .8;
+}
+
+.callus button {
+	color: white;
+	background-color: black;
+	width: 220px;
+	height: 50px;
+	margin-top: 30px;
+	margin-bottom: 130px;
+	cursor: pointer;
+}
+
+.callus button:hover {
+	background-color: white;
+	color: black;
+}
+
+/* FOOTER */
+footer {
+	text-align: center;
+}
+
+.logo-footer {
+	font-size: 1.9em;
+	padding-bottom: 20px;
+	margin-top: 20px;
+}
+
+.top-footer , .bottom-footer {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0 auto;
+	width: 300px;
+	padding-bottom: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .9em;
+	opacity: .8;
+	cursor: pointer;
+}
+
+.bottom-footer {
+	padding-bottom: 45px;
+}
+
+
+
+/* MEDIA QUERYY */
+@media screen and (max-width: 720px) {
+	.first-mainpage {
+		flex-direction: column;
+	}
+
+	.form, .banner {
+		margin: 0 auto;
+		padding: 10px;
+		width: 80%;
+	}
+
+	.form {
+		margin-bottom: 30px;
+	}
+
+	.navbar {
+		justify-content: center;
+		flex-direction: column;
+		padding: 0;
+		margin-bottom: 15px;
+	}
+	
+	.navbar .logo{
+		text-align: center;
+		margin-bottom: 30px;
+		padding-left: 0;
+		font-size: 3em;
+	}
+
+	.navbar .nav-parent {
+		width: 90%;
+		height: 30px;
+	}
+}
+
+
+
+@media screen and (max-width: 610px) {
+	.home h1 {
+		font-size: 7vw;
+		width: auto;
+		padding: 0 6px;
+	}
+
+	.callus p {
+		width:80%;
+	}
+
+	.second-mainpage .top-package, .second-mainpage .bottom-package{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.second-mainpage .package{
+		display:inline;
+		width: auto;
+	}
+
+	.second-mainpage .package .logo {
+		justify-content: center;
+	}
+
+	.second-mainpage .package .package-text {
+		text-align: center; 
+		margin-bottom: 20px;
+	}
+	
+	.logo-footer {
+		padding-left: 0;
+	}
+
+	.top-footer, .bottom-footer {
+		flex-direction: column;
+		width: 20%;
+		margin-bottom: 10px;
+	}
+
+	.top-footer p{
+		margin-bottom: 10px;
+	}
+}
